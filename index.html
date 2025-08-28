@@ -37,15 +37,15 @@
         </div>
         <div class="flex space-x-[10px]">
             <div class="flex items-center justify-center bg-[#41ff6b1a] p-[12px] rounded-full">
-            <h1>0</h1>
+            <h1 id="heart-count">0</h1>
             <img src="assets/heart.png" alt="" class="ml-1 h-[20px] w-[22px]">
         </div>
         <div class="flex items-center bg-[#41ff6b1a] p-[12px] rounded-full">
-            <h1>0</h1>
+            <h1 id="coin-count">100</h1>
             <img src="assets/coin.png" alt="" class="ml-1 h-[20px] w-[22px]">
         </div>
         <div class="flex items-center bg-[#00a63e] text-white p-[12px] rounded-full">
-            <h1>0 Copy</h1>
+            <h1 id="copy-count">0 Copy</h1>
         </div>
         </div>
     </nav>
@@ -228,17 +228,13 @@
             <div class="bg-white shadow-md items-center p-[32px] rounded-lg h-[1140px] w-[436px] ml-[20px]">
                 <div class="flex flex-row items-center justify-between">
                     <h1 class=""><i class="fa-regular fa-clock"></i>Call History</h1>
-                    <button class="btn btn w-[114px] bg-green-600 text-white rounded-full">Clear</button>
+                    <button id="clear-history" class="btn btn w-[114px] bg-green-600 text-white rounded-full">Clear</button>
                 </div>
-                <div class="flex justify-between items-center mt-4 p-2 bg-[var(--Surface,rgba(250,250,250,1))] rounded-lg">
-                    <div>
-                        <h1 class="text-lg font-bold">Fire Service Number</h1>
-                        <p>101</p>
-                    </div>
-                       <p>11:36:58 AM</p>
-                </div>
+                <div id="call-history-list"></div>
             </div>
         </section>
     </main>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
